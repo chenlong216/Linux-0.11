@@ -135,7 +135,7 @@ cscope:
 	@cscope -Rbkq
 
 start:
-	@qemu-system-x86_64 -m 16M -boot a -fda Image -hda $(HDA_IMG)
+	@qemu-system-x86_64 -m 16M -boot a -fda Image -hda $(HDA_IMG) -curses
 
 debug:
 	@echo $(OS)
